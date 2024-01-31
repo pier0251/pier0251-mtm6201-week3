@@ -13,10 +13,15 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="site-header">
+  <div class="container" role="main">
+    <ul class="skip-links" aria-label="Skip-links">
+      <li><a href="#main-nav" class="skip-link">Skip to main nav</a></li>
+      <li><a href="#main" class="skip-link">Skip to main content</a></li>
+      <li><a href="#contact-section" class="skip-link">Skip to main Contact</a></li>
+    </ul>
+    <header class="site-header" role="banner">
       <h1>Jam Box Studios</h1>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" id="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -26,12 +31,14 @@
       </nav>
       <img src="https://placekitten.com/1200/900" alt="Banner" class="banner">
     </header>
-    <main class="main-content">
+
+    <main class="main-content" id="main">
       <h1>Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-      <section class="owner">
-        <h2>Meet the owner</h2>
+
+      <section class="owner" role="region" aria-labelledby="owner-heading">
+        <h2 id="owner-heading">Meet the owner</h2>
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
@@ -46,8 +53,9 @@
           B3T 0L0
         </address>
       </section>
-      <section class="contact-section">
-        <h2>Contact Us</h2>
+
+      <section id="contact-section" role="region" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
         <form action="thanks.html" method="post">
           <label for="fullName">Full Name</label>
           <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
@@ -61,15 +69,13 @@
         </form>
       </section>
     </main>
+
     <footer class="site-footer">
       &copy; 2021 Jam Box Studios
     </footer>
   </div>
-  
-<a href="#" class="skip-link" onclick="window.scrollTo(0, 0); return false;">Back to Top</a>
+
+ 
 </body>
-
-
-
 
 </html>

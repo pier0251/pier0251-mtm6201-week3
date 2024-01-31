@@ -8,7 +8,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
-  color: #581f1f;
+  color: ##000000;
+}
+
+[itemscope] {
+  display: block;
+}
+
+[itemprop] {
+  display: block;
 }
 
 .container {
@@ -36,7 +44,7 @@ img {
 
 .main-nav ul li a {
   display: block;
-  color: #333; 
+  color: ##000000; 
   text-decoration: none;
   font-size: 1.25rem;
 }
@@ -47,7 +55,7 @@ form input, form textarea {
   margin-bottom: 1rem;
   padding: .5rem 1rem;
   background-color: #fff; 
-  color: #333; 
+  color: #000000; 
 }
 
 form textarea {
@@ -58,9 +66,9 @@ form textarea {
 }
 
 form button {
-  background: #581f1f; 
+  background: #000000; 
   color: #fff; 
-  border: 2px solid #581f1f; 
+  border: 2px solid #000000; 
   padding: 1rem;
   text-transform: uppercase;
 }
@@ -68,21 +76,27 @@ form button {
 .site-footer {
   padding: 2rem 0;
   background-color: #fff; 
-  color: #503b3b; 
+  color: ##000000; 
 }
 
+.skip-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-.skip-link {
+.skip-links a {
   position: absolute;
-  top: -40px;
-  left: 10px;
-  background-color: #333; 
-  color: #581f1f; /* Light text color */
-  padding: 8px;
+  top: -3em;
+  left: 0;
+  background-color: #333;   
+  color: white;
+  padding: 0.5em 1em;
+  font-weight: bold;
   text-decoration: none;
   z-index: 999;
 }
 
-.skip-link:hover {
-  background-color: #555; /* Darker background color on hover */
+.skip-links a:focus {
+  top: 0; 
 }
