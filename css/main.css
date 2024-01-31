@@ -1,23 +1,21 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  color: #333; 
+  color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
   color: ##000000;
 }
 
-[itemscope] {
-  display: block;
-}
-
-[itemprop] {
-  display: block;
-}
 
 .container {
   max-width: 1080px;
@@ -44,18 +42,19 @@ img {
 
 .main-nav ul li a {
   display: block;
-  color: ##000000; 
+  color: ##000000;
   text-decoration: none;
   font-size: 1.25rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
-  background-color: #fff; 
-  color: #000000; 
+  background-color: #fff;
+  color: #000000;
 }
 
 form textarea {
@@ -66,17 +65,17 @@ form textarea {
 }
 
 form button {
-  background: #000000; 
-  color: #fff; 
-  border: 2px solid #000000; 
+  background: #000000;
+  color: #fff;
+  border: 2px solid #000000;
   padding: 1rem;
   text-transform: uppercase;
 }
 
 .site-footer {
   padding: 2rem 0;
-  background-color: #fff; 
-  color: ##000000; 
+  background-color: #fff;
+  color: ##000000;
 }
 
 .skip-links {
@@ -89,7 +88,7 @@ form button {
   position: absolute;
   top: -3em;
   left: 0;
-  background-color: #333;   
+  background-color: #333;
   color: white;
   padding: 0.5em 1em;
   font-weight: bold;
@@ -98,5 +97,5 @@ form button {
 }
 
 .skip-links a:focus {
-  top: 0; 
+  top: 0;
 }

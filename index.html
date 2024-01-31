@@ -8,7 +8,8 @@
   <title>Accessible Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -37,20 +38,20 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
 
-      <section class="owner" role="region" aria-labelledby="owner-heading">
+      <section class="owner" role="region" aria-labelledby="owner-heading" itemscope
+        itemtype="https://schema.org/Person">
         <h2 id="owner-heading">Meet the owner</h2>
         <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
-          <li>Phone: 613-000-0000</li>
+          <li itemprop="name">John Doe</li>
+          <li itemprop="jobTitle">CEO</li>
+          <li itemprop="email"><a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
+          <li itemprop="telephone">613-000-0000</li>
         </ul>
         <h2>Address</h2>
-        <address>
-          Jambox Studios<br>
-          123 Guitar Road,<br>
-          Musicville, Danceistan<br>
-          B3T 0L0
+        <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Jambox Studios<br>123 Guitar Road,</span><br>
+          <span itemprop="addressLocality">Musicville, Danceistan</span><br>
+          <span itemprop="postalCode">B3T 0L0</span>
         </address>
       </section>
 
@@ -74,8 +75,6 @@
       &copy; 2021 Jam Box Studios
     </footer>
   </div>
-
- 
 </body>
 
 </html>
